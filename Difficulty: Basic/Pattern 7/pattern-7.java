@@ -28,11 +28,13 @@ class Solution {
      }
     void printTriangle(int n) {
         String arr = "*";
+        String bh=arr;
         for(int i=0;i<n;i++)
         {
             Solution.Gaps(n-1-i);
             System.out.println(arr);
             arr+="**";
+            bh="*";
         }
     }
 }
